@@ -9,3 +9,9 @@
 		<% end %>
 	</div>
 <% end %></div>
+<div>Colorpicker</div>
+<div><% @huetheme.group_themes.each do |group_id, themes| %>
+	<% themes.theme_name.each do |themename| %>
+		<button><%= themename.name %></button>
+	<% end %>
+<% end %></div>
