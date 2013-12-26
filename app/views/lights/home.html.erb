@@ -1,5 +1,11 @@
 <h3>Lights home</h3>
-<div><% @hue.groups.each do |id, group| %>
-	<input type="radio" name="groupselector" value="<%= id %>" id="groupselector-<%= id %>">
-	<label for="groupselector-<%= id %>"><%= group.name %></label>
+<div><% @hue.groups.each do |group_id, group| %>
+	<div>
+		<input type="radio" name="groupselector" value="<%= group_id %>" id="groupselector-<%= group_id %>">
+		<label for="groupselector-<%= group_id %>"><%= group.name %></label>
+		<% group.bulbs.each do |bulb| %>
+			<input type="radio" name="bulbselector" value="<%= bulb.id %>" id="bulbselector-<%= bulb.id %>">
+			<label for="bulbselector-<%= bulb.id %>"><%= bulb.id %></label>
+		<% end %>
+	</div>
 <% end %></div>
