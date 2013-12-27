@@ -12,6 +12,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Leivanpaahdin gems
+gem 'jquery-ui-rails'
 group :development do
 	gem 'better_errors'
 	gem 'quiet_assets'
