@@ -17,3 +17,7 @@
 	padding: 0;
 	margin: 0;
 }
+
+.group1, .group2, .group3 {
+	display: none;
+}
