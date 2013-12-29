@@ -1,21 +1,28 @@
 #huegroup_menu {
-	width: 460px;
+	width: 450px;
 	margin: auto;
-	background-color: #D8D8D8;
+	margin-top: 15px;
+	padding: 0;
 }
 
-.huegroup {
+.group1_v, .group2_v, .group3_v {
 	width: 150px;
 	display: inline-block;
 	vertical-align: top;
 	padding: 0;
 	margin: 0;
+	background-color: #D8D8D8;
 }
 
 .huebulbs {
 	display: none;
+	width: 150px;
 	padding: 0;
 	margin: 0;
+	z-index: 1;
+	position: absolute;
+	top: 35px;
+	background-color: #D8D8D8;
 }
 
 .group1, .group2, .group3 {

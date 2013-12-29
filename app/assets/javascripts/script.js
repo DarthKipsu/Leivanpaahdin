@@ -1,16 +1,17 @@
 // Hue group selector menu mouseover
 $(document).ready(function() {
-	$('.huegroup').mouseenter(function() {
+	var $hg = $('.group1_v, .group2_v, .group3_v')
+	$hg.mouseenter(function() {
 		$(this).find('.huebulbs').stop(true).slideDown(100);
 	});
-	$('.huegroup').mouseleave(function() {
+	$hg.mouseleave(function() {
 		$(this).find('.huebulbs').stop(true).slideUp(100);
 	});
 });
 
 // Show correct themes when group1 selected
 $(document).ready(function() {
-	var $huegroup = $('#groupselector-group1')
+	var $huegroup = $('.group1_v')
 	$huegroup.click(function() {
 		$('.group1').show();
 		$('.group2').hide();
@@ -20,7 +21,7 @@ $(document).ready(function() {
 
 // Show correct themes when group2 selected
 $(document).ready(function() {
-	var $huegroup = $('#groupselector-group2')
+	var $huegroup = $('.group2_v')
 	$huegroup.click(function() {
 		$('.group2').show();
 		$('.group1').hide();
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
 // Show correct themes when group3 selected
 $(document).ready(function() {
-	var $huegroup = $('#groupselector-group3')
+	var $huegroup = $('.group3_v')
 	$huegroup.click(function() {
 		$('.group3').show();
 		$('.group1').hide();
