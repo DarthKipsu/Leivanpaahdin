@@ -15,7 +15,7 @@ label {
 input {
 	display: none;
 }
-
+/* change background of checked inputs */
 input[type=radio]:checked + label {
 	background: red;
 }

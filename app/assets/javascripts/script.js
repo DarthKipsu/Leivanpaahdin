@@ -10,13 +10,10 @@ $(document).ready(function() {
 			$(this).find('.huebulbs').stop(true).slideUp(100);
 		}
 	});
-	// Hide the other bulb lists when selecting new one
-	$('.huebulbs').click(function() {
-		$('.huebulbs').not(this).slideUp(100);
-	});
-	// Hide bulb lists when selecting group
-	$('.dd_group').click(function() {
-		$('.huebulbs').not(this).slideUp(100);
+
+	// Hide bulb lists when selecting group or bulb
+	$('.huegroup').click(function() {
+		$('.huebulbs').not($(this).find('.huebulbs')).slideUp(100);
 	});
 });
 
@@ -28,6 +25,7 @@ $(document).ready(function() {
 		$('.group2').hide();
 		$('.group3').hide();
 	});
+	//find out if group ia already selected when reloading page
 	if ($huegroup.is(':checked')) {
 		$huegroup.change();
 	}
