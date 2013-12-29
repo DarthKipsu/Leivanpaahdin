@@ -3,9 +3,24 @@
 	margin: auto;
 	margin-top: 15px;
 	padding: 0;
+	cursor: pointer;
 }
 
-.group1_v, .group2_v, .group3_v {
+label {
+	cursor: pointer;
+	width: 100%;
+	display: inline-block;
+}
+
+input {
+	display: none;
+}
+
+input[type=radio]:checked + label {
+	background: red;
+}
+
+.huegroup {
 	width: 150px;
 	display: inline-block;
 	vertical-align: top;
@@ -21,7 +36,7 @@
 	margin: 0;
 	z-index: 1;
 	position: absolute;
-	top: 35px;
+	top: 34px;
 	background-color: #D8D8D8;
 }
 
