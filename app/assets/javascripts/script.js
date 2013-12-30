@@ -25,4 +25,5 @@ $(document).ready(function() {
 		// first hide all themes, then filter which themes to show
 		$hue_themes.hide().filter('.group' + selected_group).show();
 	});
+	$('input:checked').closest('.huegroup').change();
 });
