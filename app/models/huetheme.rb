@@ -4,9 +4,9 @@ class Huetheme
 	# 1=bedroom, 2=hall, 3=study (same as hue.rb)
 	def group_themes
 		group_themes = {
-			'group1' => Grouptheme.new(group1_themes),
-			'group2' => Grouptheme.new(group2_themes),
-			'group3' => Grouptheme.new(group3_themes)
+			'1' => Grouptheme.new(group1_themes),
+			'2' => Grouptheme.new(group2_themes),
+			'3' => Grouptheme.new(group3_themes)
 		}		
 	end
 

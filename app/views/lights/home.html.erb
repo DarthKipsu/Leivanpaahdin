@@ -1,10 +1,10 @@
 <div id="huegroup_menu">
-	<% @hue.groups.each do |group_id, group| %><div class="huegroup">
-			<input type="radio" name="groupselector" value="<%= group_id %>" id="groupselector-<%= group_id %>" class="<%= group_id %>_v dd_group">
+	<% @hue.groups.each do |group_id, group| %><div class="huegroup" data-groupid="<%= group_id %>">
+			<input type="radio" name="groupselector" value="<%= group_id %>" id="groupselector-<%= group_id %>" class="group<%= group_id %>_v">
 			<label for="groupselector-<%= group_id %>"><%= group.name %></label>
 			<div class="huebulbs">
 			<% group.bulbs.each do |bulb| %>
-				<input type="radio" name="groupselector" value="<%= bulb.id %>" id="bulbselector-<%= bulb.id %>" class="<%= group_id %>_v dd_bulb">
+				<input type="radio" name="groupselector" value="<%= bulb.id %>" id="bulbselector-<%= bulb.id %>" class="group<%= group_id %>_v dd_bulb" data-groupid="<%= group_id %>">
 				<label for="bulbselector-<%= bulb.id %>"><%= bulb.id %></label><br>
 			<% end %></div>
 		</div><% end %>
@@ -12,6 +12,6 @@
 <div>Colorpicker</div>
 <div><% @huetheme.group_themes.each do |group_id, themes| %>
 	<% themes.theme_name.each do |themename| %>
-		<button class="<%= group_id %>"><%= themename.name %></button>
+		<button class="group<%= group_id %> themebutton"><%= themename.name %></button>
 	<% end %>
 <% end %></div>

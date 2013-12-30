@@ -10,49 +10,19 @@ $(document).ready(function() {
 			$(this).find('.huebulbs').stop(true).slideUp(100);
 		}
 	});
-
 	// Hide bulb lists when selecting group or bulb
 	$('.huegroup').click(function() {
 		$('.huebulbs').not($(this).find('.huebulbs')).slideUp(100);
 	});
 });
 
-// Show correct themes when group1 selected
 $(document).ready(function() {
-	var $huegroup = $('.group1_v');
-	$huegroup.change(function() {
-		$('.group1').show();
-		$('.group2').hide();
-		$('.group3').hide();
+	var $hue_themes = $('.themebutton');
+	var $hue_groups = $('.huegroup');
+	$hue_groups.change(function() {
+		// get group id
+		var selected_group = $(this).data('groupid');
+		// first hide all themes, then filter which themes to show
+		$hue_themes.hide().filter('.group' + selected_group).show();
 	});
-	//find out if group ia already selected when reloading page
-	if ($huegroup.is(':checked')) {
-		$huegroup.change();
-	}
-});
-
-// Show correct themes when group2 selected
-$(document).ready(function() {
-	var $huegroup = $('.group2_v');
-	$huegroup.change(function() {
-		$('.group2').show();
-		$('.group1').hide();
-		$('.group3').hide();
-	});
-	if ($huegroup.is(':checked')) {
-		$huegroup.change();
-	}
-});
-
-// Show correct themes when group3 selected
-$(document).ready(function() {
-	var $huegroup = $('.group3_v');
-	$huegroup.change(function() {
-		$('.group3').show();
-		$('.group1').hide();
-		$('.group2').hide();
-	});
-	if ($huegroup.is(':checked')) {
-		$huegroup.change();
-	}
 });

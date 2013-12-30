@@ -3,9 +3,9 @@ class Hue
 	# Get groups and bulbs in differnet groups
 	def groups
 		groups = {
-			'group1' => Huegroup.new('Bedroom', bedroom_bulbs),
-			'group2' => Huegroup.new('Hall', hall_bulbs),
-			'group3' => Huegroup.new('Study', study_bulbs)
+			'1' => Huegroup.new('Bedroom', bedroom_bulbs),
+			'2' => Huegroup.new('Hall', hall_bulbs),
+			'3' => Huegroup.new('Study', study_bulbs)
 		}		
 	end
 
