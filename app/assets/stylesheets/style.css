@@ -91,6 +91,9 @@ input {
 	display: inline-block;
 	float: left;
 	text-align: right;
+	box-sizing: border-box; /* fix for padding height */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 #colorpicker {
@@ -103,6 +106,7 @@ input {
 
 button {
 	height: 25px;
+	width: 133px;
 	line-height: 23px;
 	text-align: right;
 	font-family: Tahoma, Geneva, sans-serif;

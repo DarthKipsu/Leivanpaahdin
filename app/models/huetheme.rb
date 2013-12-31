@@ -13,25 +13,25 @@ class Huetheme
 	# Themes for group1
 	def group1_themes
 		group1_themes = [
-			Themename.new('BR Sleeping'),
-			Themename.new('BR Reading')
+			Themename.new('Sleeping BR'),
+			Themename.new('Reading BR')
 		]
 	end
 
 	# Themes for group2
 	def group2_themes
 		group2_themes = [
-			Themename.new('H Welcome'),
-			Themename.new('H Nightlight')
+			Themename.new('Welcome HL'),
+			Themename.new('Nightlight HL')
 		]
 	end
 
 	# Themes for group3
 	def group3_themes
 		group3_themes = [
-			Themename.new('ST Working'),
-			Themename.new('ST Max light'),
-			Themename.new('ST Reading')
+			Themename.new('Working ST'),
+			Themename.new('Max light ST'),
+			Themename.new('Reading ST')
 		]
 	end
 

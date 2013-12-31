@@ -1,6 +1,6 @@
 <div id="huegroup_menu">
 	<div class="huegroup all" data-groupid="All">
-		<input type="radio" name="groupselector" value="groupALL" id="groupselector-All" class="groupAll_v group_bg">
+		<input type="radio" name="groupselector" value="groupAll" id="groupselector-All" class="groupAll_v group_bg">
 			<label for="groupselector-All">All</label>
 	</div><% @hue.groups.each do |group_id, group| %><div class="huegroup" data-groupid="<%= group_id %>">
 			<input type="radio" name="groupselector" value="<%= group_id %>" id="groupselector-<%= group_id %>" class="group<%= group_id %>_v group_bg">
