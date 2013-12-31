@@ -22,8 +22,12 @@ $(document).ready(function() {
 	$hue_groups.change(function() {
 		// get group id
 		var selected_group = $(this).data('groupid');
+		// Find ut if 'All' is clicked and if so, show all groups
+		if (selected_group==('All')) {
+			$hue_themes.show();
+		}
 		// first hide all themes, then filter which themes to show
-		$hue_themes.hide().filter('.group' + selected_group).show();
+		else $hue_themes.hide().filter('.group' + selected_group).show();
 	});
 	$('input:checked').closest('.huegroup').change();
 });
