@@ -31,3 +31,13 @@ $(document).ready(function() {
 	});
 	$('input:checked').closest('.huegroup').change();
 });
+
+// options menu mouseover
+$(document).ready(function() {
+	$('#optionswrapper').mouseenter(function() {
+		$('#options').slideDown(100);
+	});
+	$('#optionswrapper').mouseleave(function() {
+		$('#options').slideUp(100);
+	});
+});
