@@ -130,9 +130,6 @@ input {
 	margin-top: 50px;
 	text-align: center;
 }
-#options:nth-child(4) {
-	border-bottom-right-radius: 12px;
-}
 
 .option_select {
 	height: 25px;
@@ -162,13 +159,14 @@ input {
 	background-color: #f6f8f9;
 	border: 1px solid black;
 	border-top: 0px;
+	border-bottom-right-radius: 12px;
 	float: right;
 	padding-top: 10px;
 }
 
 .option_button {
 	cursor: pointer;
-	width: 100%;
+	width: 80%;
 	height: 25px;
 	display: inline-block;
 	background-color: #f6f8f9;

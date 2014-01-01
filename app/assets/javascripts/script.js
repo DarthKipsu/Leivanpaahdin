@@ -35,9 +35,9 @@ $(document).ready(function() {
 // options menu mouseover
 $(document).ready(function() {
 	$('#optionswrapper').mouseenter(function() {
-		$('#options').slideDown(100);
+		$('#options').stop(true).slideDown(100);
 	});
 	$('#optionswrapper').mouseleave(function() {
-		$('#options').slideUp(100);
+		$('#options').stop(true).slideUp(100);
 	});
 });
