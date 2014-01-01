@@ -1,0 +1,38 @@
+#colorpicker {
+	width: 100%;
+	height: 100%;
+}
+
+#colorslide {
+	width: 100%;
+	height: 100%;
+}
+
+#picker-wrapper {
+	width: 293px;
+	height: 300px;
+	position: relative;
+	display: inline-block;
+}
+
+#slide-wrapper {
+	width: 30px;
+	height: 300px;
+	position: relative;
+	display: inline-block;
+}
+
+#picker-indicator {
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+#slide-indicator {
+	width: 28px;
+	height: 10px;
+	position: absolute;
+	border: 1px solid white;
+}

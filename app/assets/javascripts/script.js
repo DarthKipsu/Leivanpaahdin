@@ -41,3 +41,17 @@ $(document).ready(function() {
 		$('#options').stop(true).slideUp(100);
 	});
 });
+
+// instantiate Colorpicker
+$(document).ready(function() {
+	ColorPicker(
+		document.getElementById('colorslide'),
+		document.getElementById('colorpicker'),
+		function(hex, hsv, rgb, mousePicker, mouseSlide) {
+			ColorPicker.positionIndicators(
+				document.getElementById('slide-indicator'),
+				document.getElementById('picker-indicator'),
+				mouseSlide, mousePicker
+				);
+		});
+});

@@ -17,7 +17,16 @@
 		<% themes.theme_name.each do |themename| %>
 			<button class="group<%= group_id %> themebutton"><%= themename.name %></button>
 		<% end %>
-	<% end %></div><div id="colorpicker">Colorpicker</div>
+	<% end %></div><div id="colorbg">
+		<div id="slide-wrapper">
+			<div id="colorslide"></div>
+			<div id="slide-indicator"></div>
+		</div>
+		<div id="picker-wrapper">
+			<div id="colorpicker"></div>
+			<div id="picker-indicator"></div>
+		</div>
+	</div>
 </div>
 <div id="optionswrapper">
 	<p class="option_select">Select options:</p>
