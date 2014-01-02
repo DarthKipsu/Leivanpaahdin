@@ -45,8 +45,8 @@ $(document).ready(function() {
 // instantiate Colorpicker
 $(document).ready(function() {
 	ColorPicker(
-		document.getElementById('colorslide'),
-		document.getElementById('colorpicker'),
+		document.getElementById('slide'),
+		document.getElementById('picker'),
 		function(hex, hsv, rgb, mousePicker, mouseSlide) {
 			ColorPicker.positionIndicators(
 				document.getElementById('slide-indicator'),

@@ -2,6 +2,7 @@
  * ColorPicker - pure JavaScript color picker without using images, external CSS or 1px divs.
  * Copyright © 2011 David Durman, All rights reserved.
  */
+
 (function(window, document, undefined) {
 
     var type = (window.SVGAngle || document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ? "SVG" : "VML"),
@@ -12,13 +13,13 @@
     
     var colorpickerHTMLSnippet = [
         
-        '<div class="picker-wrapper">',
-                '<div class="picker"></div>',
-                '<div class="picker-indicator"></div>',
-        '</div>',
         '<div class="slide-wrapper">',
                 '<div class="slide"></div>',
                 '<div class="slide-indicator"></div>',
+        '</div>',
+        '<div class="picker-wrapper">',
+                '<div class="picker"></div>',
+                '<div class="picker-indicator"></div>',
         '</div>'
         
     ].join('');
