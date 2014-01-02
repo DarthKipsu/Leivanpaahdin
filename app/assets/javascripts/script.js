@@ -23,7 +23,7 @@ $(document).ready(function() {
 		// get group id
 		var selected_group = $(this).data('groupid');
 		// Find ut if 'All' is clicked and if so, show all groups
-		if (selected_group==('All')) {
+		if (selected_group=='All') {
 			$hue_themes.show();
 		}
 		// first hide all themes, then filter which themes to show

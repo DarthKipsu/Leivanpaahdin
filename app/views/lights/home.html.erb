@@ -34,16 +34,30 @@
 <div id="optionswrapper">
 	<p class="option-select">Select options:</p>
 	<div id="options">
-		<p class="option-button" id="create-theme">Create a theme</p>
-		<p class="option-button">Create a schedule</p>
-		<p class="option-button">Add wakeup</p>
+		<p class="option-button" id="create-theme" data-create="theme">Create a theme</p>
+		<p class="option-button" id="create-schedule" data-create="schedule">Create a schedule</p>
+		<p class="option-button" id="create-wakeup" data-create="wakeup">Add wakeup</p>
 	</div>
 </div>
-<div id="theme-popup">
+<div id="theme-popup" class="popup">
 	<div class="close"></div>
-	<span class="ecs_tooltip">Close with ESC<span class="arrow"></span></span>
+	<span class="esc_tip">Close with ESC<span class="arrow"></span></span>
 	<div class="theme_content">
 		<p>Theme options</p>
+	</div>
+</div>
+<div id="schedule-popup" class="popup">
+	<div class="close"></div>
+	<span class="esc_tip">Close with ESC<span class="arrow"></span></span>
+	<div class="theme_content">
+		<p>Schedule options</p>
+	</div>
+</div>
+<div id="wakeup-popup" class="popup">
+	<div class="close"></div>
+	<span class="esc_tip">Close with ESC<span class="arrow"></span></span>
+	<div class="theme_content">
+		<p>Wakeup options</p>
 	</div>
 </div>
 <div class="loader"></div>
