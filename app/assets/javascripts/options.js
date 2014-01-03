@@ -8,13 +8,13 @@ $(document).ready(function() {
 			if (popupStatus == 0) { // if value is 0, show popup
 				closeloading();
 				if (selectedOption=='theme') {
-					$("#theme-popup").fadeIn(0200);
+					$("#theme-popup").fadeIn('normal');
 				}
 				else if (selectedOption=='schedule') {
-					$('#schedule-popup').fadeIn(0200);
+					$('#schedule-popup').fadeIn('normal');
 				}
 				else if (selectedOption=='wakeup') {
-					$('#wakeup-popup').fadeIn(0200);
+					$('#wakeup-popup').fadeIn('normal');
 				}
 				popupStatus = 1; // and set value to 1
 			}

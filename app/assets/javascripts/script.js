@@ -53,5 +53,7 @@ $(document).ready(function() {
 				document.getElementById('picker-indicator'),
 				mouseSlide, mousePicker
 				);
+			console.log(hsv);
+			$('#hsv_show span').text(hsv.toSource());
 		});
 });
